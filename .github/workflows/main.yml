@@ -1,0 +1,22 @@
+name: Upload True or False Game Script
+
+on:
+  push:
+    paths:
+      - 'true_or_false.sh'  # Replace with your script name if different
+
+jobs:
+  upload-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name 'RafaelKarcz'
+        git config --global user.email 'rafael.karcz@gmail.com'
+        git add .
+        git commit -m "Automated commit for true_or_false.sh changes" || echo "No changes to commit"
+        git push --quiet https://${{ secrets.MY_PERSONAL_TOKEN }}@github.com/RafaelKarcz/true_or_false.git
