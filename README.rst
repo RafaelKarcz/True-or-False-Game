@@ -5,7 +5,7 @@ True or False Game Bash Script
 Overview
 ========
 
-The True or False Game is a Bash script-based interactive game that presents players with a series of true or false questions. The game dynamically fetches questions from a local API, tracks player scores, and stores them in a file for later viewing. With the help of a straightforward interface, it's a good way to test your bash knowledge in a fun and interactive way.
+The True or False Game is a Bash script-based interactive game that presents the player with a series of true or false questions. The game dynamically fetches questions from a local API, tracks player scores, and stores them in a file for later viewing. With the help of a straightforward interface, it's a good way to test your bash knowledge in a fun and interactive way.
 
 Features
 ========
